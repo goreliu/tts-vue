@@ -5,7 +5,8 @@ const { v4: uuidv4 } = require("uuid");
 const speechApi = (ssml: string) => {
   var data = JSON.stringify({
     ssml,
-    ttsAudioFormat: "audio-24khz-160kbitrate-mono-mp3",
+    ttsAudioFormat: "raw-48khz-16bit-mono-pcm",
+    // ttsAudioFormat: "audio-24khz-160kbitrate-mono-mp3",
     offsetInPlainText: 0,
     properties: {
       SpeakTriggerSource: "AccTuningPagePlayButton",
