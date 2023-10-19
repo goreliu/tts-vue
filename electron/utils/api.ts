@@ -5,7 +5,7 @@ const { v4: uuidv4 } = require("uuid");
 const speechApi = (ssml: string) => {
   var data = JSON.stringify({
     ssml,
-    ttsAudioFormat: "ogg-48khz-16bit-mono-opus",
+    ttsAudioFormat: "audio-48khz-192kbitrate-mono-mp3",
     // ttsAudioFormat: "audio-24khz-160kbitrate-mono-mp3",
     offsetInPlainText: 0,
     properties: {
